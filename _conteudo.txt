@@ -1,0 +1,136 @@
+======================================================
+PÁGINA INDEX.HTML
+======================================================
+
+*DESTAQUE*
+
+<h2>HTML & CSS & JS</h2>
+<p>A porta de entrada para o desenvolvimento web</p>
+
+-------------------------------------------------------
+
+*FRONT-END*
+
+<h2>Desenvolvedor Front-End</h2>
+<p>O desenvolvedor Front-End é o profissional que cuida da parte do código que é interpretada diretamente pelo navegador.</p>
+<p>No desenvolvimento por camadas, HTML é o responsável pela marcação de conteúdo, o CSS cuida do estilo visual e o JavaScript é o responsável pelo comportamento.</p>
+
+<figure>
+    <img src="imagens/linguagens.png" alt="Logotipos das linguagens HTML, CSS e JS">
+</figure>
+
+-------------------------------------------------------
+
+*HISTÓRIA DA INTERNET*
+
+<h2>História da Internet</h2>
+<!-- aqui colocaremos um vídeo do Youtube -->
+
+-------------------------------------------------------
+
+*LOCALIZAÇÃO*
+
+<h2>Localização</h2>
+<p>
+Rua Francisco Coimbra, 403 - Penha de França <br>
+São Paulo/SP - CEP 03639-000 <br>
+<a href="tel:1121350300">11-2135-0300</a>                
+</p>
+<!-- aqui colocaremos um mapa do Google Maps -->
+
+
+*RODAPÉ*
+<p>
+Simplicity é um site fictício desenvolvido educacionalmente<br>
+Senac Penha 
+</p>
+
+
+
+======================================================
+PÁGINA PRODUTOS.HTML
+======================================================
+
+<h2>Produtos</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium aperiam commodi officiis. Doloribus, excepturi nostrum dolorem voluptas laboriosam neque consectetur incidunt accusamus, debitis fugiat laudantium maiores, molestiae officiis necessitatibus?</p>
+<p>Illo necessitatibus suscipit eaque, distinctio laborum earum sequi aliquam ea voluptas quod tenetur, perferendis, delectus eius iste odio repellendus. Itaque aspernatur, provident ab voluptatibus vel eum accusantium distinctio? Cum, beatae.</p>
+<p>Enim exercitationem ipsa dolorem cum, incidunt, ratione deleniti officia, laboriosam minima saepe odit ea eveniet beatae. Quasi aliquam, consequuntur veniam optio modi pariatur, esse consequatur laudantium dignissimos fugit autem velit.</p>
+<p>Exercitationem, cupiditate tempore nisi ipsum, architecto adipisci doloremque similique dicta omnis consectetur eos molestias tempora ea voluptatum blanditiis commodi saepe! Quis accusantium, tempora consequatur ad id modi molestias iusto culpa.</p>
+<p>Nam a quasi voluptas officiis qui blanditiis debitis accusamus quam eos, quas at dignissimos vero doloremque unde! Alias debitis, tempora maxime distinctio veritatis ex, iusto, voluptatum itaque aliquid fugit hic.</p>
+
+<table>
+    <caption>O que desenvolvemos</caption>
+    <tr>
+        <th>Produto</th>
+        <th>Prazo de entrega</th>
+        <th>Valor aproximado</th>
+    </tr>
+    <tr>
+        <td>Website</td>
+        <td>30 dias</td>
+        <td>R$ 1.500,00</td>
+    </tr>
+    <tr>
+        <td>Loja Virtual</td>
+        <td>30 dias</td>
+        <td>R$ 1.800,00</td>
+    </tr>
+    <tr>
+        <td>Game</td>
+        <td>60 dias</td>
+        <td>R$ 2.500,00</td>
+    </tr>
+    <tr>
+        <td>Aplicativo</td>
+        <td>60 dias</td>
+        <td>R$ 3.000,00</td>
+    </tr>
+</table>
+
+
+<p>Exercitationem, cupiditate tempore nisi ipsum, architecto adipisci doloremque similique dicta omnis consectetur eos molestias tempora ea voluptatum blanditiis commodi saepe! Quis accusantium, tempora consequatur ad id modi molestias iusto culpa.</p>
+<p>Nam a quasi voluptas officiis qui blanditiis debitis accusamus quam eos, quas at dignissimos vero doloremque unde! Alias debitis, tempora maxime distinctio veritatis ex, iusto, voluptatum itaque aliquid fugit hic.</p>
+
+
+======================================================
+PÁGINA SERVICOS.HTML
+======================================================
+
+<h2>Serviços</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium aperiam commodi officiis. Doloribus, excepturi nostrum dolorem voluptas laboriosam neque consectetur incidunt accusamus, debitis fugiat laudantium maiores, molestiae officiis necessitatibus?</p>
+<p>Illo necessitatibus suscipit eaque, distinctio laborum earum sequi aliquam ea voluptas quod tenetur, perferendis, delectus eius iste odio repellendus. Itaque aspernatur, provident ab voluptatibus vel eum accusantium distinctio? Cum, beatae.</p>
+<p>Enim exercitationem ipsa dolorem cum, incidunt, ratione deleniti officia, laboriosam minima saepe odit ea eveniet beatae. Quasi aliquam, consequuntur veniam optio modi pariatur, esse consequatur laudantium dignissimos fugit autem velit.</p>
+
+<figure>
+    <a data-lightbox="galeria" data-title="Texto 1..." href="imagens/desenvolvimento-web.jpg">
+        <img src="imagens/desenvolvimento-web-mini.jpg" alt="">
+    </a>
+    <a data-lightbox="galeria" data-title="Texto 2..." href="imagens/design-grafico.jpg">
+        <img src="imagens/design-grafico-mini.jpg" alt="">
+    </a>
+    <a data-lightbox="galeria" data-title="Texto 3..." href="imagens/marketing-digital.jpg">
+        <img src="imagens/marketing-digital-mini.jpg" alt="">
+    </a>
+    <a data-lightbox="galeria" data-title="Texto 4..." href="imagens/consultoria-treinamento.jpg">
+        <img src="imagens/consultoria-treinamento-mini.jpg" alt="">
+    </a>
+</figure>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium aperiam commodi officiis. Doloribus, excepturi nostrum dolorem voluptas laboriosam neque consectetur incidunt accusamus, debitis fugiat laudantium maiores, molestiae officiis necessitatibus?</p>
+<p>Illo necessitatibus suscipit eaque, distinctio laborum earum sequi aliquam ea voluptas quod tenetur, perferendis, delectus eius iste odio repellendus. Itaque aspernatur, provident ab voluptatibus vel eum accusantium distinctio? Cum, beatae.</p>
+<p>Enim exercitationem ipsa dolorem cum, incidunt, ratione deleniti officia, laboriosam minima saepe odit ea eveniet beatae. Quasi aliquam, consequuntur veniam optio modi pariatur, esse consequatur laudantium dignissimos fugit autem velit.</p>
+
+
+
+======================================================
+PÁGINA CONTATO.HTML
+======================================================
+
+
+<h2>Contato</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium aperiam commodi officiis. Doloribus, excepturi nostrum dolorem voluptas laboriosam neque consectetur incidunt accusamus, debitis fugiat laudantium maiores, molestiae officiis necessitatibus?</p>
+<p>Illo necessitatibus suscipit eaque, distinctio laborum earum sequi aliquam ea voluptas quod tenetur, perferendis, delectus eius iste odio repellendus. Itaque aspernatur, provident ab voluptatibus vel eum accusantium distinctio? Cum, beatae.</p>
+
+<p>Atenção: os campos Nome, email são obrigatórios.</p>
+
+<!-- aqui colocaremos um formulário -->

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contato - Simplicity</title>
+
+    <!-- link de comunicação/link de navegação -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- CABEÇALHO -->
+    <header class="limitador">
+        <h1> <a href="index.html">Simplicity</a> </h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+
+    <main>
+        <article class="limitador conteudo">
+            <h2>Contato</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium aperiam commodi officiis.
+                Doloribus, excepturi nostrum dolorem voluptas laboriosam neque consectetur incidunt accusamus, debitis
+                fugiat laudantium maiores, molestiae officiis necessitatibus?</p>
+            <p>Illo necessitatibus suscipit eaque, distinctio laborum earum sequi aliquam ea voluptas quod tenetur,
+                perferendis, delectus eius iste odio repellendus. Itaque aspernatur, provident ab voluptatibus vel eum
+                accusantium distinctio? Cum, beatae.</p>
+
+            <p>Atenção: os campos Nome, email são obrigatórios.</p>
+
+            <!-- Container para todos os campos do formulário -->
+            <!-- Subindo o site para o navegador - Parte 01 -->
+            <form action="https://formspree.io/f/xyyvjovv" method="post" id="my-form">
+                <p>
+                    <label for="nome">Nome</label> 
+                    <input type="text" name="nome" id="nome" required>
+                </p>
+
+                <p>
+                    <label for="email">E-mail</label> <br>
+                    <input type="text" name="email" id="email" required>
+                </p>
+
+                <p>
+                    <label for="data de nascimento">Data de nascimento</label> <br>
+                    <input type="date" name="nascimento" id="nascimento">
+
+                </p>
+
+                <p>Sexo <br>
+                    <input type="radio" name="sexo" id="Masculino" value="Masculino">
+                    <label for="masculino">Masculino</label> 
+
+                 <input type="radio" name="sexo" id="Feminino" value="Feminino">
+                    <label for="feminino">Feminino</label>
+
+                    <input type="radio" name="sexo" id="Outros" value="Outros">
+                    <label for="nao-responder">Prefiro não responder</label></p>   
+
+                <p>Interesses <br>
+                <input type="checkbox" name="interesses" id="design" value="Design">
+                <label for="design">Design</label>
+
+                <input type="checkbox" name="interesses" id="programacao" value="Programação">
+                <label for="programacao">Programação</label>
+
+                <input type="checkbox" name="interesses" id="marketing" value="Marketing">
+                <label for="maekrting">Marketing</label>
+
+                </p>
+
+                <p>
+                    <label for="assunto">Assunto:</label>
+                    <select name="assunto" id="assunto">
+                        <!-- Este option vazio é importante para que o usuário não seja induzido a uma determinada opção padrão-->
+                        <option value=""></option>
+
+
+                        <option>Dúvidas</option>
+                        <option>Reclamações</option>
+                        <option>ELogios</option>
+                        <option>Outros</option>
+
+
+                    </select>
+
+                </p>
+
+                <p>
+                    <label for="mensagem">Mensagem</label> <p class="aviso">(máximo de500 caracteres)</p>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="7"></textarea>
+
+                </p>
+
+                <p>
+                    <button type="submit">Enviar</button>
+
+                </p>
+                <!-- Subindo o site para o navegador - Parte 03 (trazido la de baixo, dentro do código) -->
+                <p id="my-form-status"></p>
+
+
+            </form>
+
+
+        </article>
+    </main>
+    <!-- RODAPÉ -->
+
+    <footer>
+        <p>
+            Simplicity é um site fictício desenvolvido educacionalmente<br>
+            Senac Penha
+        </p>
+
+    </footer>
+    <!-- Subindo o site para o provedor - Parte 02 -->
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Obrigado pelo contato. Retornaremos assim que possível.";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Desculpe! Mas ouve um problema com o seu formulário"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Desculpe! Mas ouve um problema com o seu formulário"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+
+</body>
+
+</html>
